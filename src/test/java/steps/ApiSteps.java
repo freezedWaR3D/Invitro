@@ -25,9 +25,9 @@ public class ApiSteps {
     }
 
     @Тогда("Код ответа HTTP равен {int}")
-    public void кодОтветаРавен(int город) {
-        assertEquals(город, response.getStatusCode(),
-                "HTTP статус код должен быть " + город);
+    public void кодОтветаРавен(int статускод) {
+        assertEquals(статускод, response.getStatusCode(),
+                "HTTP статус код должен быть " + статускод);
     }
 
     @И("В теле ответа содержится информация о городе с кодом {string}")
