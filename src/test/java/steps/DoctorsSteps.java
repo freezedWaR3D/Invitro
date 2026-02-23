@@ -20,6 +20,7 @@ public class DoctorsSteps {
 
     @Когда("Пользователь активирует чекбокс 'Показать детских врачей'")
     public void пользовательАктивируетЧекбокс() {
+        doctorsPage.clickAdsClose();
         doctorsPage.clickToCheckbox();
     }
 

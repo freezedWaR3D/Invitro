@@ -17,7 +17,7 @@ public class ApiSteps {
     @Дано("Выполняется запрос к API current-city с параметром CODE={string}")
     public void выполняетсяЗапрос(String код) {
         response = given()
-                .param("?CODE=", код)
+                .queryParam("?CODE=", код)
                 .when()
                 .get(baseUrl)
                 .then()

@@ -23,12 +23,12 @@ import org.junit.jupiter.api.Assertions;
 
         @Когда("Пользователь кликает по всем пунктам меню, кроме 'МРТ тела' из коллекции")
         public void пользовательКликаетПоВсемПунктамМенюКоллекц() {
-            radiologyPage.collectAllElementExeptMrt();
+            radiologyPage.collectAllElementExeptMrtCollect();
         }
 
         @И("Пользователь кликает по всем пунктам меню, кроме 'МРТ тела' в процессе клика")
         public void пользовательКликаетПоВсемПунктамМенюКлик() {
-            radiologyPage.collectAllElementExeptMrtCollect();
+            radiologyPage.collectAllElementExeptMrtClick();
         }
 
         @Тогда("Все пункты меню были прокликаны успешно")

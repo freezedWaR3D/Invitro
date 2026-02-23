@@ -16,9 +16,16 @@ private SelenideElement textChildrenMedic = $x("//span[text()='Детский в
 
 private SelenideElement checkboxActive = $x("//input[@checked='checked'] ");
 
+private SelenideElement adsClose = $x("//button[@class='uxs-1Rt7dOrmXX uxs-15ciifp']");
+
 
 public void clickToCheckbox(){
     checkbox.click();
+}
+
+public void clickAdsClose(){
+    adsClose.shouldBe(visible,Duration.ofSeconds(10));
+    adsClose.click();
 }
 
 public boolean checkboxIsActive() {
